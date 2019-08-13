@@ -3,9 +3,55 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProductModule", "ProductModule", "{5645F6FA-F94E-42D1-B856-DDBBEC0481EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProductSearchModule", "ProductSearchModule", "{A3555A6A-0E59-4B5A-A085-B2260370350E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CartModule", "CartModule", "{D2797542-683C-4E7B-8D6C-61A86896AFF1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CheckoutModule", "CheckoutModule", "{A8F88459-51DC-4FA6-8153-4D2247740538}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OrderModule", "OrderModule", "{42201C02-3F88-406B-B6CF-69EA09E52D49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{E4C3AFA0-10F6-4DB4-A640-BD2732F8799A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Service", "1 - Service", "{D42717DB-1778-484E-880E-A1479C9A4A97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{A7F153D1-3D29-4EF9-9308-A439058EED9C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{B5F7F7F4-4B8F-46AC-BA23-CBD01DD094D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{67ED2A5B-7EEE-4BA6-81E8-3B362DBCA051}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IncredibleStore.ProductModule.Domain", "IncredibleStore.ProductModule.Domain\IncredibleStore.ProductModule.Domain.csproj", "{24CD0BF6-64FD-4A2B-BC4D-E8251D931CF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IncredibleStore.ProductModule.Infra.DataAccess", "IncredibleStore.ProductModule.Infra.DataAccess\IncredibleStore.ProductModule.Infra.DataAccess.csproj", "{DDE021B1-EC9F-4F83-8F0C-880590B4FF3E}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24CD0BF6-64FD-4A2B-BC4D-E8251D931CF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24CD0BF6-64FD-4A2B-BC4D-E8251D931CF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24CD0BF6-64FD-4A2B-BC4D-E8251D931CF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24CD0BF6-64FD-4A2B-BC4D-E8251D931CF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDE021B1-EC9F-4F83-8F0C-880590B4FF3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE021B1-EC9F-4F83-8F0C-880590B4FF3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE021B1-EC9F-4F83-8F0C-880590B4FF3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDE021B1-EC9F-4F83-8F0C-880590B4FF3E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D42717DB-1778-484E-880E-A1479C9A4A97} = {5645F6FA-F94E-42D1-B856-DDBBEC0481EF}
+		{A7F153D1-3D29-4EF9-9308-A439058EED9C} = {5645F6FA-F94E-42D1-B856-DDBBEC0481EF}
+		{B5F7F7F4-4B8F-46AC-BA23-CBD01DD094D1} = {5645F6FA-F94E-42D1-B856-DDBBEC0481EF}
+		{67ED2A5B-7EEE-4BA6-81E8-3B362DBCA051} = {5645F6FA-F94E-42D1-B856-DDBBEC0481EF}
+		{24CD0BF6-64FD-4A2B-BC4D-E8251D931CF6} = {B5F7F7F4-4B8F-46AC-BA23-CBD01DD094D1}
+		{DDE021B1-EC9F-4F83-8F0C-880590B4FF3E} = {67ED2A5B-7EEE-4BA6-81E8-3B362DBCA051}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DF7475CD-E5A6-4F2F-9D0B-146449F5E295}
